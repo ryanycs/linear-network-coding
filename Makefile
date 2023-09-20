@@ -1,8 +1,8 @@
-all: matrix.o lnc.o
-	g++ matrix.o lnc.o
+all: matrix.o main.o
+	g++ matrix.o main.o
 matrix.o: matrix.cpp matrix.h
 	g++ -c matrix.cpp
-lnc.o:
-	g++ -c lnc.cpp
+main.o:
+	g++ -c main.cpp
 clean:
-	rm a.out matrix.o lnc.o
+	rm a.out matrix.o main.o
