@@ -47,6 +47,7 @@ vector<vector<int>> LNC_encode(string s) {
     // Gererate linear independent matrix
     coding_vectors = generate_indep_mat(n_packet);
 
+    // encoding
     linear_combination = mat_mul(coding_vectors, packets);
 
     // embed coding_vectors to packets
